@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -33,6 +34,15 @@ android {
     buildFeatures {
         viewBinding = true
     }
+//    buildscript {
+//        repositories {
+//            google()
+//        }
+//        dependencies {
+//            val nav_version = "2.7.0"
+//            classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+//        }
+//    }
 }
 
 dependencies {
